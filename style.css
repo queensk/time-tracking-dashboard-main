@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all ease-in-out 0.3s;
 }
 body {
   background-color: #0d1323;
@@ -28,8 +29,11 @@ body {
 .grid-item:hover,
 .grid-item:hover .cls-hover-card {
   background-color: #34397b;
+  cursor: pointer;
 }
-
+.activity-icon img {
+  cursor: pointer;
+}
 .grid-item-wide {
   grid-row: span 2;
   background-color: #1d204b;
@@ -138,4 +142,57 @@ body {
   background-color: #f1c75b;
 }
 @media (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto; /* Set a single column for mobile view */
+    gap: 10px;
+    padding: 10px;
+    background-color: #0d1323;
+  }
+
+  .grid-item {
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .activity p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .about-user {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-items: center; */
+    /* align-items: center; */
+  }
+  .user-image {
+    grid-row: span 2;
+  }
+  .about-user h1,
+  .about-user p {
+    width: 100%;
+    font-size: 20px;
+    margin: 0 20px 0 10px;
+  }
+  .about-user p {
+    display: flex;
+    align-items: flex-end;
+  }
+  .current-activity{
+    display: flex;
+    align-items: center;
+    justify-content:space-between
+  }
 }
