@@ -3,15 +3,15 @@
   margin: 0;
   padding: 0;
 }
-body{
-    background-color: #0d1323;
+body {
+  background-color: #0d1323;
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 90vh;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
 }
 .grid-container {
   display: grid;
@@ -21,14 +21,13 @@ body{
   background-color: #0d1323;
 }
 
-
 .grid-item {
   /* border: 1px solid #fff; */
   overflow: hidden;
 }
-.grid-item:hover .current-activity,
-.activity-name:hover{
-    background-color: #34397b;
+.grid-item:hover,
+.grid-item:hover .cls-hover-card {
+  background-color: #34397b;
 }
 
 .grid-item-wide {
@@ -60,8 +59,8 @@ body{
 .about-user h1 {
   width: 30%;
 }
-.activity{
-    padding: 10% 5%;    
+.activity {
+  padding: 10% 5%;
 }
 .activity p:first-child,
 .activity p:last-child {
@@ -72,19 +71,19 @@ body{
   padding: 1% 10% 1% 5%;
   margin: 10px 0;
 }
-.activity P:hover{
-    color: #fff;
-    cursor: pointer;
+.activity P:hover {
+  color: #fff;
+  cursor: pointer;
 }
 .activity-data {
   overflow: hidden;
 }
 .current-activity {
-    padding: 70px 0;
+  padding: 70px 0;
 }
 
 .current-activity h1 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .activity-name {
@@ -112,9 +111,9 @@ body{
   margin-bottom: -30px;
   z-index: 0;
 }
-.activity-icon img{
-    height: 50px;
-    width: auto;
+.activity-icon img {
+  height: 50px;
+  width: auto;
 }
 .activity-name {
   position: relative;
@@ -123,18 +122,20 @@ body{
   background-color: #1d204b;
 }
 
-.class-blue{
-   background-color: #56c2e6;
+.class-blue {
+  background-color: #56c2e6;
 }
-.class-red{
-   background-color: #ff5e7d;
+.class-red {
+  background-color: #ff5e7d;
 }
-.class-green{
-    background-color: #4bcf83;
+.class-green {
+  background-color: #4bcf83;
 }
-.class-purple{
-    background-color: #7235d1;
+.class-purple {
+  background-color: #7235d1;
 }
-.class-yellow{
-    background-color: #f1c75b;
+.class-yellow {
+  background-color: #f1c75b;
+}
+@media (max-width: 767px) {
 }
